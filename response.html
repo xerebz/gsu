@@ -1,0 +1,539 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<HTML lang="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Pragma" NAME="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" NAME="Cache-Control" CONTENT="no-cache">
+<LINK REL="stylesheet" HREF="/css/web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="/css/web_defaultprint.css" TYPE="text/css" media="print">
+<TITLE>Add/Drop/Withdraw Classes</TITLE>
+<META HTTP-EQUIV="Content-Script-Type" NAME="Default_Script_Language" CONTENT="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=420><IMG height=94
+      alt="Georgia State University"
+      src="/gsugifs/gsutop_left.gif"
+      width=420 border=0></TD>
+    <TD bgColor=#315aad><br><font size=5pt color="white">GoSOLAR</font><br><font color="white">Georgia State Online Access to Records</font></TD>
+    <TD width=50><IMG height=94
+      alt="Georgia State Home"
+      src="/gsugifs/gsutop_right.gif"
+      width=50 border=0></TD></TR></TBODY></TABLE>
+<DIV class="headerwrapperdiv">
+<DIV class="pageheaderdiv1">
+<A HREF="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</A>
+<H1>GoSOLAR</H1></DIV><DIV class="headerlinksdiv">
+<SPAN class="pageheaderlinks2">
+<MAP NAME="Module_Navigation_Links_H" title="Module Navigation Links">
+<p>
+<A HREF="#skip_Module_Navigation_Links_H" onMouseover="window.status='Skip Module Navigation Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Module Navigation Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Module Navigation Links</A>
+<TABLE  CLASS="plaintable" SUMMARY="This is main table for displaying Tab Items."
+                          WIDTH="100%" cellSpacing=0 cellPadding=0 border=0>
+<TR>
+<TD CLASS="pldefault">
+<TABLE  CLASS="plaintable" SUMMARY="This table displays Tab Items."
+                 cellSpacing=0 cellPadding=0 border=0>
+<TR>
+<td class="taboff" height=22>
+<A HREF="/bprod/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu" onMouseover="window.status='Main Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Main Menu'; return true" onBlur="window.status=''; return true" >Main</A>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="tabon"  height=22>
+<A HREF="/bprod/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu" onMouseover="window.status='Registration Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Registration Menu'; return true" onBlur="window.status=''; return true" >Registration</A>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="tabon"  height=22>
+<A HREF="/bprod/twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu" onMouseover="window.status='Student Records'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Student Records'; return true" onBlur="window.status=''; return true" >Student Records</A>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="tabon"  height=22>
+<A HREF="/bprod/twbkwbis.P_GenMenu?name=bmenu.P_StuAcctMnu" onMouseover="window.status='Student Accounts'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Student Accounts'; return true" onBlur="window.status=''; return true" >Student Accounts</A>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="taboff" height=22>
+<A HREF="/bprod/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu" onMouseover="window.status='Financial Aid'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Financial Aid'; return true" onBlur="window.status=''; return true" >Financial Aid</A>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="taboff" height=22>
+<A HREF="/bprod/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu" onMouseover="window.status='Personal Information'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Personal Information'; return true" onBlur="window.status=''; return true" >Personal Information</A>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD class="bgtabon" width="100%" colSpan=2><IMG SRC="/wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
+</MAP>
+</SPAN>
+<a name="skip_Module_Navigation_Links_H"></a>
+</DIV>
+<TABLE  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox."
+         WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<DIV class="headerlinksdiv2">
+<FORM ACTION="/bprod/twbksrch.P_ShowResults" METHOD="POST">
+Search
+<SPAN class="fieldlabeltextinvisible"><LABEL for=keyword_in_id><SPAN class="fieldlabeltext">Search</SPAN></LABEL></SPAN>
+<INPUT TYPE="text" NAME="KEYWRD_IN" SIZE="20" MAXLENGTH="65" ID="keyword_in_id">
+<INPUT TYPE="submit" VALUE="Go">
+</FORM>
+</div>
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<SPAN class="pageheaderlinks">
+<A HREF="/bprod/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu"  class="submenulinktext2" id="ssbbackurl">RETURN TO MENU</A>
+|
+<A HREF="/bprod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</A>
+|
+<A HREF="/bprod/twbkfrmt.P_DispHelp?pagename_in=bwskfreg.P_AddDropCrse" accesskey="H" onClick="popup = window.open('/bprod/twbkfrmt.P_DispHelp?pagename_in=bwskfreg.P_AddDropCrse', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</A>
+|
+<A HREF="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</A>
+</span>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="pagetitlediv">
+<TABLE  CLASS="plaintable" SUMMARY="This table displays title and static header displays."
+   WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<H2>Add/Drop/Withdraw Classes</H2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<DIV class="staticheaders">
+002097919 Eva Rivero<br>
+Spring Semester 2014<br>
+Jan 14, 2014 06:08 pm<br>
+</div>
+</TD>
+</TR>
+<TR>
+<TD class="bg3" width="100%" colSpan=3><IMG SRC="/wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD>
+</TR>
+</TABLE>
+<a name="main_content"></a>
+</DIV>
+<DIV class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<BR>
+<FORM ACTION="/bprod/bwckcoms.P_Regs" METHOD="POST" onSubmit="return checkSubmit()">
+<DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><TR><TD CLASS="indefault"><IMG SRC="/wtlgifs/twgginfo.gif" ALT="Information" CLASS="headerImg" TITLE="Information"  NAME="Info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=24 WIDTH=27></TD><TD CLASS="indefault"><SPAN class="infotext"> <b>For a full list of important enrollment dates, download the printable semester calendar <A HREF="http://www.gsu.edu/registrar/calendars_and_exam_schedules.html" target="_blank"> here.</A></b> <p><i>Please know that completing all steps of the financial aid process, and paying for charges on your student account must be done at least one week before classes begin to confirm your course registration.</p></i><p>If you register for courses and do not plan to attend, you are responsible for dropping courses prior to the first day of classes.<p> <b>Steps for Successful Enrollment:</b><p><table><tr><td width=10></td><td>Step&nbsp;1:</td><td><A HREF="/bprod/bwckcapp.P_DispCurrent">Run a Program Evaluation to Review Remaining Course Requirements and Schedule Advisor Appointments as Necessary</A></td></tr><tr></tr><tr><td width=10></td><td>Step&nbsp;2:</td><td>Register for Classes<br><A HREF="http://www.gsu.edu/registrar/how_to_register.html" target="_blank">* How to Add/Drop/Withdraw courses.</A></td></tr><tr></tr><tr><td width=10></td><td>Step&nbsp;3:</td><td><A HREF="/bprod/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu">Check Financial Aid Requirements for Eligibility and Accept Aid</A><br><A HREF="/gsufinpdfs/FinAid_Inst.pdf" target="_blank">* How to Check Requirements and Accept Aid</A></td></tr><tr></tr><tr><td width=10></td><td>Step&nbsp;4:</td><td><A HREF="/bprod/wwgktnet.p_redirect">View and Pay Charges on Panther Pay</A><br><A HREF="http://hollywood.gsu.edu/ets/enrollment/registrar/how-to-view-and-pay-in-PAWS-11-18-11.mov" target="_blank">* How to view and pay your student account in PantherPay</A></td></tr><tr></tr><tr><td width=10></td><td>Step&nbsp;5:</td><td><A HREF="/bprod/bwskcrse.P_CrseSchdDetl">Print your Course Schedule</A></td></tr><tr></tr><tr><td width=10></td><td>Step&nbsp;6:</td><td><A HREF="http://www.gsu.edu/registrar/calendars_and_exam_schedules.html" target="_blank">Print the At-A-Glance Yearly Academic Calendar</A></td></tr></table><p> <b>Please complete all steps to confirm your enrollment for the semester.  All steps must be completed prior to the semester start.</b><p><b>Remember to continually check your student email for important messages.</b><p>Georgia State University prohibits the application or use by any student of external hardware or software technology to aid in the registration process or any other functions performed in GoSOLAR. The use of external technology may result in disciplinary actions taken against you.<p><A HREF="http://registrar.gsu.edu/files/2013/04/registration_error_messages_in_PAWS.pdf" target="_blank"><b>How to troubleshoot any registration error message.</b></A></SPAN></TD></TR></TABLE><P></DIV>
+<INPUT TYPE="hidden" NAME="term_in" VALUE="201401">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="CRN_IN" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="SUBJ" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="CRSE" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="SEC" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="LEVL" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="CRED" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="GMOD" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="TITLE" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="MESG" VALUE="DUMMY">
+<INPUT TYPE="hidden" NAME="REG_BTN" VALUE="DUMMY">
+<H3>Current Schedule</H3>
+<TABLE  CLASS="datadisplaytable" SUMMARY="Current Schedule">
+<TR>
+<TH CLASS="ddheader" scope="col" >Status</TH>
+<TH CLASS="ddheader" scope="col" >Action</TH>
+<TH CLASS="ddheader" scope="col" ><ACRONYM title = "Course Reference Number">CRN</ACRONYM></TH>
+<TH CLASS="ddheader" scope="col" ><ABBR title = Subject>Subj</ABBR></TH>
+<TH CLASS="ddheader" scope="col" ><ABBR title = Course>Crse</ABBR></TH>
+<TH CLASS="ddheader" scope="col" ><ABBR title = Section>Sec</ABBR></TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Level</TH>
+<TH CLASS="ddheader" scope="col" ><ABBR title = "Credit Hours">Cred</ABBR></TH>
+<TH CLASS="ddheader" scope="col" >Grade Mode</TH>
+<TH CLASS="ddheader" scope="col" >Title</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="MESG" VALUE="DUMMY">**Web Registered** on Jan 09, 2014</TD>
+<TD CLASS="dddefault">
+<LABEL for=action_id1><SPAN class="fieldlabeltextinvisible">Action</SPAN></LABEL>
+<SELECT NAME="RSTS_IN" SIZE="1" ID="action_id1">
+<OPTION VALUE="" SELECTED>None
+<OPTION VALUE="DW">Web Drop/Delete
+</SELECT>
+</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="201401"><INPUT TYPE="hidden" NAME="CRN_IN" VALUE="18162">18162<INPUT TYPE="hidden" NAME="start_date_in" VALUE="01/13/2014"><INPUT TYPE="hidden" NAME="end_date_in" VALUE="05/06/2014"></TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SUBJ" VALUE="POLS">POLS</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRSE" VALUE="1101">1101</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SEC" VALUE="105">105</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">-</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="LEVL" VALUE="Undergraduate Semester">Undergraduate Semester</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRED" VALUE="    3.000">    3.000</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="GMOD" VALUE="Letters I, A-F, W, WF">Letters I, A-F, W, WF</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="TITLE" VALUE="AMERICAN GOVERNMENT">AMERICAN GOVERNMENT</TD>
+</TR>
+<TR>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="MESG" VALUE="DUMMY">**Web Registered** on Jan 13, 2014</TD>
+<TD CLASS="dddefault">
+<LABEL for=action_id2><SPAN class="fieldlabeltextinvisible">Action</SPAN></LABEL>
+<SELECT NAME="RSTS_IN" SIZE="1" ID="action_id2">
+<OPTION VALUE="" SELECTED>None
+<OPTION VALUE="DW">Web Drop/Delete
+</SELECT>
+</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="201401"><INPUT TYPE="hidden" NAME="CRN_IN" VALUE="10245">10245<INPUT TYPE="hidden" NAME="start_date_in" VALUE="01/13/2014"><INPUT TYPE="hidden" NAME="end_date_in" VALUE="05/06/2014"></TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SUBJ" VALUE="CHEM">CHEM</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRSE" VALUE="1212K">1212K</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SEC" VALUE="090">090</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">05:30&nbsp;pm-06:45&nbsp;pm</TD>
+<TD CLASS="dddefault">R</TD>
+<TD CLASS="dddefault">02:00&nbsp;pm-02:45&nbsp;pm</TD>
+<TD CLASS="dddefault">R</TD>
+<TD CLASS="dddefault">02:55&nbsp;pm-05:00&nbsp;pm</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="LEVL" VALUE="Undergraduate Semester">Undergraduate Semester</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRED" VALUE="    4.000">    4.000</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="GMOD" VALUE="Letters I, A-F, W, WF">Letters I, A-F, W, WF</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="TITLE" VALUE="PRINCIPLES OF CHEMISTRY II">PRINCIPLES OF CHEMISTRY II</TD>
+</TR>
+<TR>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="MESG" VALUE="DUMMY">**Web Registered** on Jan 13, 2014</TD>
+<TD CLASS="dddefault">
+<LABEL for=action_id3><SPAN class="fieldlabeltextinvisible">Action</SPAN></LABEL>
+<SELECT NAME="RSTS_IN" SIZE="1" ID="action_id3">
+<OPTION VALUE="" SELECTED>None
+<OPTION VALUE="DW">Web Drop/Delete
+</SELECT>
+</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="201401"><INPUT TYPE="hidden" NAME="CRN_IN" VALUE="11841">11841<INPUT TYPE="hidden" NAME="start_date_in" VALUE="01/13/2014"><INPUT TYPE="hidden" NAME="end_date_in" VALUE="05/06/2014"></TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SUBJ" VALUE="BIOL">BIOL</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRSE" VALUE="2300">2300</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SEC" VALUE="005">005</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">08:00&nbsp;am-09:15&nbsp;am</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="LEVL" VALUE="Undergraduate Semester">Undergraduate Semester</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRED" VALUE="    3.000">    3.000</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="GMOD" VALUE="Letters I, A-F, W, WF">Letters I, A-F, W, WF</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="TITLE" VALUE="MICROBIOLOGY & PUBLIC HEALTH">MICROBIOLOGY & PUBLIC HEALTH</TD>
+</TR>
+<TR>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="MESG" VALUE="DUMMY">**Web Registered** on Jan 13, 2014</TD>
+<TD CLASS="dddefault">
+<LABEL for=action_id4><SPAN class="fieldlabeltextinvisible">Action</SPAN></LABEL>
+<SELECT NAME="RSTS_IN" SIZE="1" ID="action_id4">
+<OPTION VALUE="" SELECTED>None
+<OPTION VALUE="DW">Web Drop/Delete
+</SELECT>
+</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="201401"><INPUT TYPE="hidden" NAME="CRN_IN" VALUE="13115">13115<INPUT TYPE="hidden" NAME="start_date_in" VALUE="01/13/2014"><INPUT TYPE="hidden" NAME="end_date_in" VALUE="05/06/2014"></TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SUBJ" VALUE="BIOL">BIOL</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRSE" VALUE="2107K">2107K</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SEC" VALUE="005">005</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">09:30&nbsp;am-10:45&nbsp;am</TD>
+<TD CLASS="dddefault">T</TD>
+<TD CLASS="dddefault">11:00&nbsp;am-01:30&nbsp;pm</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="LEVL" VALUE="Undergraduate Semester">Undergraduate Semester</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRED" VALUE="    4.000">    4.000</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="GMOD" VALUE="Letters I, A-F, W, WF">Letters I, A-F, W, WF</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="TITLE" VALUE="PRINCIPLES OF BIOLOGY I">PRINCIPLES OF BIOLOGY I</TD>
+</TR>
+<TR>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="MESG" VALUE="DUMMY">**Web Registered** on Jan 13, 2014</TD>
+<TD CLASS="dddefault">
+<LABEL for=action_id5><SPAN class="fieldlabeltextinvisible">Action</SPAN></LABEL>
+<SELECT NAME="RSTS_IN" SIZE="1" ID="action_id5">
+<OPTION VALUE="" SELECTED>None
+<OPTION VALUE="DW">Web Drop/Delete
+</SELECT>
+</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="201401"><INPUT TYPE="hidden" NAME="CRN_IN" VALUE="11470">11470<INPUT TYPE="hidden" NAME="start_date_in" VALUE="01/13/2014"><INPUT TYPE="hidden" NAME="end_date_in" VALUE="05/06/2014"></TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SUBJ" VALUE="MATH">MATH</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRSE" VALUE="1070">1070</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="SEC" VALUE="105">105</TD>
+<TD CLASS="dddefault">T</TD>
+<TD CLASS="dddefault">02:00&nbsp;pm-02:50&nbsp;pm</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="LEVL" VALUE="Undergraduate Semester">Undergraduate Semester</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="CRED" VALUE="    3.000">    3.000</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="GMOD" VALUE="Letters I, A-F, W, WF">Letters I, A-F, W, WF</TD>
+<TD CLASS="dddefault"><INPUT TYPE="hidden" NAME="TITLE" VALUE="ELEMENTARY STATISTICS">ELEMENTARY STATISTICS</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE  CLASS="plaintable" SUMMARY="Schedule Summary">
+<TR>
+<TD CLASS="pldefault">Total Credit Hours: </TD>
+<TD CLASS="pldefault">   17.000</TD>
+</TR>
+<TR>
+<TD CLASS="pldefault">Billing Hours:</TD>
+<TD CLASS="pldefault">   17.000</TD>
+</TR>
+<TR>
+<TD CLASS="pldefault">Minimum Hours:</TD>
+<TD CLASS="pldefault">      0.000</TD>
+</TR>
+<TR>
+<TD CLASS="pldefault">Maximum Hours:</TD>
+<TD CLASS="pldefault">     18.000</TD>
+</TR>
+<TR>
+<TD CLASS="pldefault">Your current number of withdrawals taken is: </TD>
+<TD CLASS="pldefault">0</TD>
+</TR>
+<TR>
+<TD CLASS="pldefault">Your current number of withdrawals remaining is: </TD>
+<TD CLASS="pldefault">6</TD>
+</TR>
+<TR>
+<TD CLASS="pldefault">Date:</TD>
+<TD CLASS="pldefault">Jan 14, 2014 06:08 pm</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE  CLASS="plaintable" summary="This layout table holds message information">
+<TR>
+<TD CLASS="pldefault">
+<IMG SRC="/wtlgifs/web_stop_cascade.png" ALT="Stop" CLASS="headerImg" TITLE="Stop"  NAME="web_stop" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=13 WIDTH=13>
+</TD>
+<TD CLASS="pldefault">
+<SPAN class="errortext">Registration Add Errors</SPAN>
+<BR>
+</TD>
+</TR>
+</TABLE>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This layout table is used to present Registration Errors.">
+<TR>
+<TH CLASS="ddheader" scope="col" >Status</TH>
+<TH CLASS="ddheader" scope="col" ><ACRONYM title = "Course Reference Number">CRN</ACRONYM></TH>
+<TH CLASS="ddheader" scope="col" ><ABBR title = Subject>Subj</ABBR></TH>
+<TH CLASS="ddheader" scope="col" ><ABBR title = Course>Crse</ABBR></TH>
+<TH CLASS="ddheader" scope="col" ><ABBR title = Section>Sec</ABBR></TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Level</TH>
+<TH CLASS="ddheader" scope="col" ><ABBR title = "Credit Hours">Cred</ABBR></TH>
+<TH CLASS="ddheader" scope="col" >Grade Mode</TH>
+<TH CLASS="ddheader" scope="col" >Title</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Level Restriction</TD>
+<TD CLASS="dddefault">12345</TD>
+<TD CLASS="dddefault">PHYS</TD>
+<TD CLASS="dddefault">9999</TD>
+<TD CLASS="dddefault">010</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">-</TD>
+<TD CLASS="dddefault">Undergraduate Semester</TD>
+<TD CLASS="dddefault">    1.000</TD>
+<TD CLASS="dddefault">IP & S,U,I,W,WF</TD>
+<TD CLASS="dddefault">DOCTORAL DISSERTATION RESEARCH</TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">Level Restriction</TD>
+<TD CLASS="dddefault">12346</TD>
+<TD CLASS="dddefault">PHYS</TD>
+<TD CLASS="dddefault">9999</TD>
+<TD CLASS="dddefault">015</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">-</TD>
+<TD CLASS="dddefault">Undergraduate Semester</TD>
+<TD CLASS="dddefault">    1.000</TD>
+<TD CLASS="dddefault">IP & S,U,I,W,WF</TD>
+<TD CLASS="dddefault">DOCTORAL DISSERTATION RESEARCH</TD>
+</TR>
+</TABLE>
+<BR>
+<H3>Add Classes Worksheet</H3>
+<TABLE  CLASS="dataentrytable" SUMMARY="Add Classes Data Entry" WIDTH="100%">
+<TR>
+<TD COLSPAN="10" CLASS="detitle" scope="colgroup" ><ACRONYM title = "Course Reference Numbers">CRNs</ACRONYM></TD>
+</TR>
+<TR>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id1><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id1">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id2><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id2">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id3><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id3">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id4><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id4">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id5><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id5">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id6><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id6">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id7><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id7">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id8><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id8">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id9><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id9">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="hidden" NAME="RSTS_IN" VALUE="RW">
+<LABEL for=crn_id10><SPAN class="fieldlabeltextinvisible">CRN</SPAN></LABEL>
+<INPUT TYPE="text" NAME="CRN_IN" SIZE="6" MAXLENGTH="5" ID="crn_id10">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="">
+<INPUT TYPE="hidden" NAME="start_date_in" VALUE="">
+<INPUT TYPE="hidden" NAME="end_date_in" VALUE="">
+</TD>
+</TABLE>
+<INPUT TYPE="hidden" NAME="regs_row" VALUE="5">
+<INPUT TYPE="hidden" NAME="wait_row" VALUE="0">
+<INPUT TYPE="hidden" NAME="add_row" VALUE="10">
+
+<BR>
+<INPUT TYPE="submit" NAME="REG_BTN" VALUE="Submit Changes">
+<INPUT TYPE="submit" NAME="REG_BTN" VALUE="Class Search">
+<INPUT TYPE="reset" VALUE="Reset">
+</FORM>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<TABLE  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><TR><TD class="bgtabon" width="100%" colSpan=2><IMG SRC="/wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
+<A HREF="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</A>
+</DIV>
+<DIV class="footerbeforediv">
+
+</DIV>
+<DIV class="footerlinksdiv">
+<SPAN class="pagefooterlinks">
+<MAP NAME="Add/Drop/Withdraw_Classes_Links_F" title="Add/Drop/Withdraw Classes Links">
+<p>
+<A HREF="#skip_Add/Drop/Withdraw_Classes_Links_F" onMouseover="window.status='Skip Add/Drop/Withdraw Classes Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Add/Drop/Withdraw Classes Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Add/Drop/Withdraw Classes Links</A>
+<P>[ <A HREF="/bprod/bwskflib.P_SelDefTerm?calling_proc_name=bwskfreg.P_AddDropCrse" onMouseover="window.status='Select Term'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Select Term'; return true" onBlur="window.status=''; return true" >Select Term</A>
+ | <A HREF="/bprod/bwskrsta.P_RegsStatusDisp" onMouseover="window.status='Check Registration Status and Appointment Times'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Check Registration Status and Appointment Times'; return true" onBlur="window.status=''; return true" >Check Registration Status and Appointment Times</A>
+ | <A HREF="/bprod/bwskfcls.p_sel_crse_search" onMouseover="window.status='Look-Up Classes to Add'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Look-Up Classes to Add'; return true" onBlur="window.status=''; return true" >Look-Up Classes to Add</A>
+ | <A HREF="http://shop.efollett.com/htmlroot/storehome/georgiastateuniversity570.html" onMouseover="window.status='Buy Textbooks Online'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Buy Textbooks Online'; return true" onBlur="window.status=''; return true" >Buy Textbooks Online</A>
+ | <A HREF="/bprod/bwskfreg.P_ChangeCrseOpt" onMouseover="window.status='Change Variable Hours'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Change Variable Hours'; return true" onBlur="window.status=''; return true" >Change Variable Hours</A>
+ | <A HREF="/bprod/bwskfshd.P_CrseSchd" onMouseover="window.status='View Weekly Schedule'; return true" onMouseout="window.status=''; return true" onFocus="window.status='View Weekly Schedule'; return true" onBlur="window.status=''; return true" >View Weekly Schedule</A>
+ | <A HREF="/bprod/bwskfshd.P_CrseSchdDetl" onMouseover="window.status='View Basic Course Information'; return true" onMouseout="window.status=''; return true" onFocus="window.status='View Basic Course Information'; return true" onBlur="window.status=''; return true" >View Basic Course Information</A>
+ ]
+</MAP>
+</SPAN>
+<a name="skip_Add/Drop/Withdraw_Classes_Links_F"></a>
+</DIV>
+<DIV class="footerafterdiv">
+
+</DIV>
+<DIV class="globalafterdiv">
+
+</DIV>
+<DIV class="globalfooterdiv">
+
+</DIV>
+<DIV class="pagefooterdiv">
+<SPAN class="releasetext">Release: 8.5.3</SPAN>
+</DIV>
+<DIV class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+<div class="banner_copyright"> <br><h5>© 2014 Ellucian Company L.P. and its affiliates.<br></h5></div>
+</BODY>
+</HTML>
+
